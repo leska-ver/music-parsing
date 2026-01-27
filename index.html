@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>🎵 Извлечение списка музыки</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>
+				<span>🎵</span>	Извлечение списка музыки из HTML
+			</h1>
+			<p class="subtitle">Загрузи HTML файл или вставь HTML код для извлечения списка песен</p>
+
+			<div class="upload-area" id="uploadArea">
+				<div class="upload-icon">📁</div>
+				<h3>Перетащи HTML файл сюда</h3>
+				<p>или</p>
+				<button class="btn" id="selectFileBtn">Выбрать файл HTML</button>
+				<p style="margin-top: 20px; color: #666;">Поддерживаются файлы с музыкой из Одноклассников, ВК и других сервисов</p>
+				<input class="file-input" type="file" id="fileInput" accept=".html,.htm,.txt">
+			</div>
+
+			<div style="text-align: center; margin: 30px 0;">
+				<p style="margin-bottom: 15px; color: #666; font-size: 18px;">ИЛИ</p>
+				<button class="btn btn-secondary" id="pasteHtmlBtn">📋 Вставить HTML код вручную</button>
+			</div>
+
+			<div class="progress" id="progressBar">
+				<div class="progress-bar" id="progressFill"></div>
+			</div>
+
+			<div class="results" id="results">
+				<div class="results-header">
+					<h2>🎶 Результаты извлечения</h2>
+					<div class="stats"> Найдено песен: 
+						<span id="songCount">0</span> Файл: 
+						<span id="fileName">-</span>
+					</div>
+				</div>
+
+				<div class="controls">
+					<button class="btn" id="downloadCsvBtn">💾 Скачать CSV</button>
+					<button class="btn" id="downloadTxtBtn">📄 Скачать TXT</button>
+					<button class="btn" id="copyListBtn">📋 Копировать список</button>
+					<button class="btn btn-secondary" id="clearBtn">🗑️ Очистить</button>
+				</div>
+
+				<div style="overflow-x: auto; margin-top: 20px;">
+					<table id="musicTable">
+						<thead>
+							<tr>
+								<th style="width: 50px;">#</th>
+								<th>Название песни</th>
+								<th>Исполнитель</th>
+							</tr>
+						</thead>
+						<tbody id="tableBody">
+						<!-- Сюда будут добавляться строки -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно для вставки HTML -->
+		<div class="modal" id="modal">
+			<div class="modal__info">
+				<h2 class="modal__h2">📋 Вставь HTML код</h2>
+				<textarea class="modal__textarea" id="htmlInput" placeholder="Вставь сюда HTML код с музыкой..."></textarea>
+				<div class="modal__btns">
+					<button class="btn btn-secondary" id="cancelBtn">Отмена</button>
+					<button class="btn" id="processHtmlBtn">Обработать</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
