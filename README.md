@@ -4,4 +4,6 @@ https://leska-ver.github.io/music-parsing/
 
 проверка дублирований песень - https://text-tool.ru/duplicate_finder.php
 
-Settings -> Pages -> Repository name + Create repository ->
+Settings -> Pages -> в Branch выбираем main, жмём Save. в Custom domain пишим название https://leska-ver.github.io/music-parsing/, жмём Save.
+
+Терминал - Вид 
