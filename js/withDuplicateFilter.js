@@ -307,7 +307,7 @@ function showDuplicatesModal(duplicates, beforeCount, afterCount, uniqueTracks) 
   }
   
   // Формируем компактный HTML с дубликатами
-  let duplicatesHTML = '<div style="display: grid; gap: 20px; max-height: 400px; overflow-y: auto;">';
+  let duplicatesHTML = '<div style="display: grid; gap: 20px;">';
   duplicates.forEach((dup, index) => {
 		duplicatesHTML += `
 			<div class="duplicate-item">
