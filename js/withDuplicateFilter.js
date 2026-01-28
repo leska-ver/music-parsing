@@ -312,7 +312,7 @@ function showDuplicatesModal(duplicates, beforeCount, afterCount, uniqueTracks) 
 		duplicatesHTML += `
 			<div class="duplicate-item">
 				<strong>${index + 1}.</strong> "${dup.title}" - ${dup.artist} 
-				<span class="duplicate-number" style="display: block;">был #${dup.number}</span>
+				<span class="duplicate-number" style="display: block; margin-top: 5px;">был #${dup.number}</span>
 			</div>
 		`;
   });
