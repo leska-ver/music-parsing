@@ -10,5 +10,5 @@ Settings -> Pages -> в Branch выбираем main, жмём Save. в Custom d
 
 PS: Добавила кнопку "Удалить дубликаты" - (indexDuplicate.html, styleDublicate.css и withDuplicateFilter.js)
 
-<h2>Ссылка</h2>
+<h2>Ссылка На обновления!</h2>
 https://leska-ver.github.io/music-parsing/indexDuplicate.html
